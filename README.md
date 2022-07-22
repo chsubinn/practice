@@ -1,1 +1,1 @@
-# practice - practice for programming languages
+# practice - for programming languages
