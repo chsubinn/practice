@@ -18,3 +18,15 @@ else:
         result = coins[-1]-1
     
 print(result)
+
+# greedy solution - target원을 만들 수 있는지 확인하고 업데이트 하는 방식
+n = int(input())
+data = list(map(int, input().split()))
+data.sort()
+#1 2 3 8
+target = 1
+for x in data:
+    if target<x:
+        break
+    target += x
+print(target)
