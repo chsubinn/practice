@@ -19,3 +19,18 @@ while n != 0:
             people.pop()
 
 print(result)
+
+# greedy solution
+n = int(input())
+people = list(map(int, input().split()))
+
+people.sort()
+result = 0
+count = 0
+
+for i in  data:
+    count += 1 # 현재 그룹에 해당 모험가를 포함시키기
+    if count>= i: # 현재 그룹에 포함된 모험가의 수가 현재의 공포도 이상이라면, 그룹 결성
+        result += 1
+        count = 0
+print(result)
