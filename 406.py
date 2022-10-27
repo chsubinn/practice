@@ -16,3 +16,17 @@ answer=''.join(sorted(answer))
 print(answer+'{0}'.format(sum))
 
 # 모범 답안
+data = input()
+result = []
+value = 0
+
+for x in data:
+    if x.isalpha(): # 알파벳인지 확인: isalpha(), 숫자인지 확인: isdigit()
+        result.append(x)
+    else:
+        value += int(x)
+        
+result.sort()
+if value!=0:
+    result.append(str(value)) # 리스트로 처리하면 문자열로 처리하는 것보다 간단하다.
+print(''.join(result)) # 리스트에 있는 것 '' 로 합쳐서 출력
