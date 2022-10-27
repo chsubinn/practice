@@ -16,4 +16,4 @@ if sum==0:
 else:
     print("READY")
     
-# 모범 답안
+# 모범 답안: 내 답안과 ㅇ리치
